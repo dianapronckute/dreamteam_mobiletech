@@ -1,21 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
-
+import { Text, View, Image, StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  firstLogo: {
+    width: 100,
+    height: 100
+  }
+})
+const HelloWorldApp = () => {
+  return (
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "dodgerblue"
+      }}>
+      <Text>Hello, world!</Text>
+      <Text>Hello World from Group nG06</Text>
+      <Text>Member: Kristaps Fedorovics</Text>
+      <Image
+        style={styles.firstLogo}
+        source={require('/home/kristaps/DreamTeam/dreamteam_mobiletech/assets/space-dog-laika1.png')}>
+      </Image>
+    </View>
+  )
+}
+export default HelloWorldApp;
