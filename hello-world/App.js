@@ -12,25 +12,24 @@ import AssetExample from './components/AssetExample';
 import { Card } from 'react-native-paper';
 
 const styles = StyleSheet.create({
-  budgetLogo: {
+  starLogo: {
     width: 200,
     height: 200,
   },
 });
-const ExpensoLogo = () => {
+const helloWorldApp = () => {
   return (
     <View
       style={{
         flex: 1,
-        justifyContent: 'top',
+        justifyContent: 'center',
         alignItems: 'center',
       }}>
-      <Image style={styles.budgetLogo} source={require('./assets/budget.png')} />
-      <Text>Manage your finance with budget planning app and become a millionare...</Text>
-      <Text></Text>
+      <Text>Hello World from Group nG06 : member Liene Rimsa</Text>
+      <Text>This is my Liene Rimsa first React Native application!</Text>
 
-      
+      <Image style={styles.starLogo} source={require('./assets/images.png')} />
     </View>
   );
 };
-export default ExpensoLogo;
+export default helloWorldApp;
